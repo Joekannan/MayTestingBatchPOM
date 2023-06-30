@@ -2,74 +2,70 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-24T14:37:00 NZST" name="Default suite" finished-at="2023-06-24T14:37:36 NZST" duration-ms="36255">
+  <suite started-at="2023-06-27T19:25:17 NZST" name="Default suite" finished-at="2023-06-27T19:25:59 NZST" duration-ms="42285">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@c333c60]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-06-24T14:37:00 NZST" name="Default test" finished-at="2023-06-24T14:37:36 NZST" duration-ms="36255">
-      <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@770d3326]" started-at="2023-06-24T14:37:00 NZST" name="setUp" finished-at="2023-06-24T14:37:20 NZST" duration-ms="19975" status="PASS">
+    <test started-at="2023-06-27T19:25:17 NZST" name="Default test" finished-at="2023-06-27T19:25:59 NZST" duration-ms="42285">
+      <class name="runner.CucumberRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.CucumberRunner@c333c60]" started-at="2023-06-27T19:25:17 NZST" name="setUpClass" finished-at="2023-06-27T19:25:17 NZST" duration-ms="514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:runner.CucumberRunner@c333c60]" started-at="2023-06-27T19:25:17 NZST" name="setUp" finished-at="2023-06-27T19:25:34 NZST" duration-ms="17320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin()[pri:0, instance:tests.LoginTest@770d3326]" started-at="2023-06-24T14:37:20 NZST" name="verifyLogin" finished-at="2023-06-24T14:37:36 NZST" duration-ms="15950" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@c333c60]" started-at="2023-06-27T19:25:34 NZST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-27T19:25:57 NZST" duration-ms="22978" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Successful Login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login]"]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for url to contain "login_success". Current url: "https://demo.guru99.com/test/newtours/" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for url to contain "login_success". Current url: "https://demo.guru99.com/test/newtours/login_sucess.php" (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
 System info: host: 'Nagajothis-MacBook-Pro.local', ip: '192.168.20.4', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/lt/rd138qbd6qx...}, goog:chromeOptions: {debuggerAddress: localhost:52867}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 97153f7af726703c04b2631b95d2dc2e]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/lt/rd138qbd6qx...}, goog:chromeOptions: {debuggerAddress: localhost:58331}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b864fb98aa2f4592d8019cf944fb0ec7]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "login_success". Current url: "https://demo.guru99.com/test/newtours/" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "login_success". Current url: "https://demo.guru99.com/test/newtours/login_sucess.php" (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
 System info: host: 'Nagajothis-MacBook-Pro.local', ip: '192.168.20.4', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/lt/rd138qbd6qx...}, goog:chromeOptions: {debuggerAddress: localhost:52867}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 97153f7af726703c04b2631b95d2dc2e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/lt/rd138qbd6qx...}, goog:chromeOptions: {debuggerAddress: localhost:58331}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b864fb98aa2f4592d8019cf944fb0ec7
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-at tests.LoginTest.verifyLogin(LoginTest.java:42)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at stepDef.LoginStepDef.user_enters_valid_crendentials(LoginStepDef.java:32)
+at ✽.User enters valid crendentials(file:///Users/nagajothikaliappan/Documents/Learn_Java/Framework/src/test/resources/Login.feature:7)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@770d3326]" started-at="2023-06-24T14:37:36 NZST" name="tearDown" finished-at="2023-06-24T14:37:36 NZST" duration-ms="258" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDoiwn()[pri:0, instance:runner.CucumberRunner@c333c60]" started-at="2023-06-27T19:25:57 NZST" name="tearDoiwn" finished-at="2023-06-27T19:25:59 NZST" duration-ms="1043" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.LoginTest -->
+        </test-method> <!-- tearDoiwn -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.CucumberRunner@c333c60]" started-at="2023-06-27T19:25:59 NZST" name="tearDownClass" finished-at="2023-06-27T19:25:59 NZST" duration-ms="342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.CucumberRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

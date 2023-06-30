@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-27T19:32:44 NZST" name="Suite" finished-at="2023-06-27T19:33:29 NZST" duration-ms="45645">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@68267da0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-06-27T19:32:44 NZST" name="Test" finished-at="2023-06-27T19:33:29 NZST" duration-ms="45645">
+      <class name="runner.CucumberRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.CucumberRunner@68267da0]" started-at="2023-06-27T19:32:44 NZST" name="setUpClass" finished-at="2023-06-27T19:32:44 NZST" duration-ms="524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:runner.CucumberRunner@68267da0]" started-at="2023-06-27T19:32:44 NZST" name="setUp" finished-at="2023-06-27T19:33:03 NZST" duration-ms="18543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@68267da0]" started-at="2023-06-27T19:33:03 NZST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-27T19:33:28 NZST" duration-ms="25362" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Successful Login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for url to contain "login_success". Current url: "https://demo.guru99.com/test/newtours/login_sucess.php" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
+System info: host: 'Nagajothis-MacBook-Pro.local', ip: '192.168.20.4', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/lt/rd138qbd6qx...}, goog:chromeOptions: {debuggerAddress: localhost:58449}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a1a38c3dbedbec1f1f29ab59746faf69]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "login_success". Current url: "https://demo.guru99.com/test/newtours/login_sucess.php" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
+System info: host: 'Nagajothis-MacBook-Pro.local', ip: '192.168.20.4', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/lt/rd138qbd6qx...}, goog:chromeOptions: {debuggerAddress: localhost:58449}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a1a38c3dbedbec1f1f29ab59746faf69
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+at stepDef.LoginStepDef.user_enters_valid_crendentials(LoginStepDef.java:30)
+at ✽.User enters valid crendentials(file:///Users/nagajothikaliappan/Documents/Learn_Java/Framework/src/test/resources/Login.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDoiwn()[pri:0, instance:runner.CucumberRunner@68267da0]" started-at="2023-06-27T19:33:28 NZST" name="tearDoiwn" finished-at="2023-06-27T19:33:29 NZST" duration-ms="864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDoiwn -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.CucumberRunner@68267da0]" started-at="2023-06-27T19:33:29 NZST" name="tearDownClass" finished-at="2023-06-27T19:33:29 NZST" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.CucumberRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

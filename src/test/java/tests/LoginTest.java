@@ -37,6 +37,7 @@ public class LoginTest {
 	  LoginPage objLogin = new LoginPage(driver);
 	  objLogin.enterUsername("Caroline");
 	  objLogin.enterPassword("Password123");
+	  objLogin.clickSubmit();
 	  wait.until(ExpectedConditions.urlContains("login_success"));
 	  objLogin.verifySuccessfulLogin();
   }

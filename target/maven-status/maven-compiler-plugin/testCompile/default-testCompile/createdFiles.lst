@@ -1,4 +1,8 @@
-tests/RegistrationTest.class
-pages/LoginPage.class
+stepDef/LoginStepDef.class
+runner/CucumberRunner.class
+stepDef/RegisterStepDef.class
 tests/LoginTest.class
 pages/RegistrationPage.class
+tests/RegistrationTest.class
+driverHooks/BaseClass.class
+pages/LoginPage.class

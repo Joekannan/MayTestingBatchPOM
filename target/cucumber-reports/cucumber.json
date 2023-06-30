@@ -1,0 +1,61 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-06-27T07:33:03.555Z",
+        "line": 4,
+        "name": "Verify Successful Login",
+        "description": "",
+        "id": "login;verify-successful-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 70059000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on homepage",
+            "match": {
+              "location": "stepDef.LoginStepDef.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain \"login_success\". Current url: \"https://demo.guru99.com/test/newtours/login_sucess.php\" (tried for 10 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.0.0-alpha-2\u0027, revision: \u0027f148142cf8\u0027, time: \u00272019-07-01T20:55:26\u0027\nSystem info: host: \u0027Nagajothis-MacBook-Pro.local\u0027, ip: \u0027192.168.20.4\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u002711.0.10\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/lt/rd138qbd6qx...}, goog:chromeOptions: {debuggerAddress: localhost:58449}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: a1a38c3dbedbec1f1f29ab59746faf69\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)\n\tat stepDef.LoginStepDef.user_enters_valid_crendentials(LoginStepDef.java:30)\n\tat ✽.User enters valid crendentials(file:///Users/nagajothikaliappan/Documents/Learn_Java/Framework/src/test/resources/Login.feature:7)\n",
+              "duration": 25010914000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User enters valid crendentials",
+            "match": {
+              "location": "stepDef.LoginStepDef.user_enters_valid_crendentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1005000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User should be logged in successfully",
+            "match": {
+              "location": "stepDef.LoginStepDef.user_should_be_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "This fetaure will verify the login functionality of newtours application",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Login.feature",
+    "tags": []
+  }
+]
